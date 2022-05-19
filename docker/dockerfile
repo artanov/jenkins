@@ -1,5 +1,5 @@
 FROM alpine
-RUN apt-get install python-pip 
+RUN apk add --update py3-pip
 RUN pip install awscli
 
 CMD tail -f /dev/null
