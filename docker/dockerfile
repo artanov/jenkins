@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add --update py3-pip
-RUN pip install awscli
+RUN apk add --update py3-pip && \
+    pip install awscli
 
 CMD tail -f /dev/null
